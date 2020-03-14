@@ -13,7 +13,7 @@ body, html, main {
     background-image: url("./icons/parallax-3.jpg");
     opacity: 0.9;
     /* Set a specific height */
-    height: 100%;
+    height: auto;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
