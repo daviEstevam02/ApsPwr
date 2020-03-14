@@ -9,6 +9,9 @@ body, html, main {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 16px;
   }
+  html {
+  scroll-behavior: smooth;
+}
   .thirdParallax{
     background-image: url("./icons/parallax-3.jpg");
     opacity: 0.9;
