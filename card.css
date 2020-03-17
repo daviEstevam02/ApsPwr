@@ -3,19 +3,23 @@
     text-decoration: none;
     color: #000000;
 }
-.image-area
-{
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
+/* Remove extra left and right margins, due to padding */
+.img-area {margin: 0 -5px; align-items: center; justify-content: space-between;}
+
+/* Clear floats after the columns */
+.img-area:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
+    flex-grow: 1;
     text-align: center;
-    padding: 5px 4px;
-    display: inline-block;
+    padding: 10px 15px;
+    float: left;
+    width: 33.3%;
 
 }
 
@@ -24,6 +28,7 @@
     height: 400px;
     position: relative;
     overflow: hidden;
+    box-shadow: 6px -6px 14px 0px rgba(0,0,0,0.71);
     border-radius: 15px;
 }
 
@@ -48,7 +53,7 @@
     height: 400px;
     width: 300px;
     filter: grayscale(100%);
-    transition: 2s;
+    transition: 1s;
 }
 
 .img-wrapper:hover img {
