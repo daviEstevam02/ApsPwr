@@ -4,7 +4,16 @@
     color: #000000;
 }
 /* Remove extra left and right margins, due to padding */
-.img-area {margin: 0 -5px; align-items: center; justify-content: space-between;}
+.img-area {
+    width: 100%;
+    margin: 0 -5px; 
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
 
 /* Clear floats after the columns */
 .img-area:after {
