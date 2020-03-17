@@ -1,7 +1,7 @@
 #linkUnip {
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
-    color: #000000;
+    color: #fff;
 }
 /* Remove extra left and right margins, due to padding */
 .img-area {
@@ -102,8 +102,8 @@
 
 .img-wrapper ul li {
     background: #333;
-    height: 40px;
-    width: 40px;
+    height: 35x;
+    width: 35px;
     text-align: center;
     line-height: 40px;
     transform: perspective(800px) rotateY(90deg);
