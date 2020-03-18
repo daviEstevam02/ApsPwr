@@ -29,7 +29,7 @@ body, html, main {
     
     opacity: 0.9;
     /* Set a specific height */
-    height: 100%;
+    height: 550px;
     background-image: url("./icons/backgroudImage-3.png");
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -110,13 +110,14 @@ body, html, main {
         margin: 10px 0px 0px  0px;
     }
     #secao-2{
-        height: 100vh;
+        height: 100%;
         width: 100%;
     }
     .secao2-content{
       background-color: #6cff7759;
       width: 88.8%;
       margin: 0 auto;
+      height: 50%;
     }
     .titleSecondSection{
         color: #ffffff;
