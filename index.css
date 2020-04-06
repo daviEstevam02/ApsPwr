@@ -9,6 +9,17 @@ body, html, main {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 16px;
   }
+  body::-webkit-scrollbar{
+    width: 0.5rem;
+  }
+  body::-webkit-scrollbar-track{
+    background: #ffffffef;
+  }
+  body::-webkit-scrollbar-thumb{
+    background: #3e9244f8;
+    border-radius: 8px;
+    outline: 1px solid; 
+  }
   html {
   scroll-behavior: smooth;
 }
@@ -16,7 +27,8 @@ body, html, main {
     background-image: url("./icons/parallax-3.jpg");
     opacity: 0.9;
     /* Set a specific height */
-    height: auto;
+    height:calc(100% - 60px) ;
+    
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -26,11 +38,10 @@ body, html, main {
   }
 
   .secondParallax{
-    
+    background-image: url("./icons/backgroudImage-3.png");
     opacity: 0.9;
     /* Set a specific height */
-    height: 550px;
-    background-image: url("./icons/backgroudImage-3.png");
+    height:calc(100% - 60px) ;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -45,18 +56,19 @@ body, html, main {
     position: absolute;
   }
 
-  .parallax {
-    /* The image used */
-    background-image: url("./icons/imageSlide1.jpg");
-    opacity: 0.9;
-    /* Set a specific height */
+  .container {
     height: 100%;
-  
-    /* Create the parallax scrolling effect */
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+   
   }
   
     #navigation{
@@ -130,64 +142,79 @@ body, html, main {
         text-align: center;
         padding: 100px 30px ;
     }
-    /* .slider-holder
-    {
-        width: 800px;
-        height:400px;
-        text-align: center;
-        overflow: hidden;
-        margin-top: 30px;
-        margin-left: 5px;
-        display: inline-block;
-    }
-   
-    .image-holder
-    {
-        width: 1460px;
-        height: 400px;
-        position: relative;
-        -webkit-transition: left 2s;
-        -moz-transition: left 2s;
-        -o-transition: left 2s;
-        transition: left 2s;
-        display:flex;
-        align-items: center;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-   
-    .slider-image
-    {
-        width: 2400px;
-        height: 390px;
-        float: left;
-        position:relative;
-    }
-   
-    #slider-image-1:target ~ .image-holder
-    {
-        left: 0px;
-    }
-   
-    #slider-image-2:target ~ .image-holder
-    {
-        left: -800px;
-    }
-   
-    .button-holder
-    {
-        position: relative;
-        top: -20px;
-    }
-   
-    .slider-change
-    {
-        display: inline-block;
-        height: 10px;
-        width: 10px;
-        border-radius: 5px;
-        background-color: #ffffff;
-    } */
+
+    /* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  display:flex;
+  align-items: center;
+  margin: 20px 150px ;
+}
+
+.slideshow-container img{
+  width:100%;
+  max-width: 3000px;
+  height: 600px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 
       
       .title {
