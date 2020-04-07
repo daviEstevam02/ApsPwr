@@ -1,9 +1,8 @@
-main {
-    margin-left: 8rem;
-    padding: 1rem;
-}
 
-  
+
+  main {
+    padding: 3rem;
+}
   #navigation {
     /* list-style: none; */
     height: 80px;
@@ -61,6 +60,11 @@ ul.lista-links li img {
 }
 
 @media only screen and (max-width: 720px) {
+    main {
+        margin-left: 8rem;
+        padding: 1rem;
+    }
+
     #navigation {
         top: 0;
         width: 8rem;
