@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="slide.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="card.css">
     <link rel="shortcut icon" href="icons/iconPage.png " type="favicon/ico" />
@@ -43,50 +45,17 @@
 
     </nav>
     <main>
-        <div class="container">
-            <section id="secao-1">
-                <div class="slideshow-container">
-
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="icons/IMG_1543.jpg" class="imgContainer" >
-                      <div class="text">Caption Text</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="icons/IMG_9353.jpg" class="imgContainer" >
-                      <div class="text">Caption Two</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="icons/EnzoPicture.jpg"  class="imgContainer">
-                      <div class="text">Caption Three</div>
-                    </div>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center">
-                      <span class="dot"></span> 
-                      <span class="dot"></span> 
-                      <span class="dot"></span> 
-                    </div>
-                <!-- <div class="slider-holder">
-            <span id="slider-image-1"></span>
-            <span id="slider-image-2"></span>
-            <div class="image-holder">
-                <img src="icons/imageSlide1.jpg" class="slider-image"  />
-                <img src="icons/imagemSlide2.jpg" class="slider-image"  width="100%"/>
-            </div>
-            <div class="button-holder">
-                <a href="#slider-image-1" class="slider-change"></a>
-                <a href="#slider-image-2" class="slider-change"></a>
-            </div>
-        </div> -->
-            </section>
+      <section id="secao-1">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="icons/IMG_1543.jpg" class="carousel-img" alt="A">
+            <img src="icons/EnzoPicture.jpg" class="carousel-img" alt="A">
+            <img src="icons/IMG_9353.jpg" class="carousel-img" alt="A">
+          </div>
         </div>
+        <button id="nextBtn">Próximo</button>
+        <button id="prevBtn">Voltar</button>
+     </section>
     </main>
 
     <div class="secondParallax">

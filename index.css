@@ -71,53 +71,12 @@ body, html, main {
    
   }
   
-    #navigation{
-        height: 60px;
-        display: flex;
-        align-items: center; /* Só funciona com display:flex; pega o elemento da div e joga no centro vertical */
-        padding: 0 2rem;  /* tamanho de fonte usado no navegador "body" */
-        position: fixed; 
-        width: calc(100% - 4rem);
-        z-index: 99;
-        text-transform: capitalize;
-        background-color: #ffffffef;
-    }
-    ul.lista-links{
-        list-style: none;
-        display:flex;
-        margin-left: auto;
-    }
-    ul.lista-links li{
-        margin: 0 0 0 4px;
-    }
-    ul.lista-links li a{
-        display:flex;
-        flex-flow: row; /* Qual é a direção das coisas*/
-        align-items: center;
-        padding: 4px 8px;
-    }
-    ul.lista-links li img{
-        height: 24px;
-        width: 24px;
-        margin-right: 5px;
-    }
-  #link{
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 30px;
-    }
-    #link:hover{
-        color: #e4e3e3;
-    }
+  
     #titulo{
         text-align: center;
         text-decoration: none;
     }
-    #linkUm{
-        color:#000000;
-        text-decoration: none;
-        text-align: left; 
-    }
+
     .logo{
         margin: 10px 0px 0px  0px;
     }
@@ -156,10 +115,9 @@ body, html, main {
 }
 
 .slideshow-container img{
-  width: 100%;
-  width: 100%;
+  width: 50%;
   border-radius: 10px 10px 10px 10px;
-  height: 600px;
+  height: auto;
   outline: paleturquoise;
   border-color: black;
 
@@ -208,6 +166,8 @@ body, html, main {
   width: 100%;
   animation-duration: 2.75s;
 }
+
+
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
