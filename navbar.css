@@ -3,7 +3,8 @@ main {
     padding: 1rem;
 }
 
-#navigation {
+  
+  #navigation {
     /* list-style: none; */
     height: 80px;
     display: flex;
@@ -63,19 +64,33 @@ ul.lista-links li img {
     #navigation {
         top: 0;
         width: 8rem;
-        height: 100vw;
+        height: 100%;
         flex-direction: column;
     }
+    #navigation:hover{
+        width: 12rem;
+    }
+    #navigation:hover .link-text{
+        display: inline!important;
 
-    ul.lista-links {
+    }
+    .link-text {
+        display: none;
+        margin-left: 1rem;
+      }
+      ul.lista-links {
         list-style: none;
         display: flex;
         margin-left: auto;
         text-decoration: none;
+        align-items: center;
         flex-wrap: wrap;
         align-items: center;
+        align-items: center;
         transition: 600ms;
+        justify-content: center;
         flex-direction: column;
+        width: 100%;
     }
 
     ul.lista-links li {
@@ -83,8 +98,14 @@ ul.lista-links li img {
         width: 100%;
         padding: 10px 0 10px 0;
         height: auto;
+        display: flex;
+        justify-content: center;
     }
-
+    ul.lista-links li img {
+        height: 24px;
+        width: 35%!important;
+        margin-right: 5px;
+    }
     .secondSectionParagraph {
         color: #ffffff;
         text-align: center;
@@ -119,15 +140,10 @@ ul.lista-links li img {
     }
 
     #linkUm {
-        display: inline;
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
-
-    ul.lista-links li img {
-        height: 24px;
-        width: 24px;
-        margin-right: 5px;
-    }
-
 
     .thirdParallax {
         background-image: url(./icons/parallax-3.jpg);
