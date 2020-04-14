@@ -1,0 +1,164 @@
+
+
+  main {
+    padding: 3rem;
+}
+  #navigation {
+    /* list-style: none; */
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    transition: width 600ms ease;
+    /* padding: 0; */
+    /* outline-style: none; */
+    margin: 0;
+    /* overflow: scroll; */
+    position: fixed;
+    width: 100vw;
+    z-index: 999999;
+    text-transform: capitalize;
+    background-color: #ffffff;
+}
+
+ul.lista-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    transition: 600ms;
+    /* flex-direction: row; */
+}
+
+ul.lista-links li {
+    margin: 0 0 0 4px;
+    /* width: 100%; */
+    height: auto;
+}
+
+#linkUm {
+    color: #000000;
+    text-decoration: none;
+    align-items: center;
+    text-align: left;
+    filter: grayscale(100%) opacity(0.8);
+}
+
+ul.lista-links li a {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+ul.lista-links li img {
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+}
+
+/* Celular de ate 720 de largura*/
+@media only screen and (max-width: 720px) {
+    main {
+        margin-left: 8rem;
+        padding: 1rem;
+    }
+
+    #navigation {
+        top: 0;
+        width: 8rem;
+        height: 100%;
+        flex-direction: column;
+    }
+    #navigation:hover{
+        width: 100vw;
+        height: 100vh;
+    }
+    #navigation:hover .link-text{
+        display: inline!important;
+
+    }
+    .link-text {
+        display: none;
+        margin-left: 1rem;
+      }
+      ul.lista-links {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+        text-decoration: none;
+        align-items: center;
+        flex-wrap: wrap;
+        align-items: center;
+        align-items: center;
+        transition: 600ms;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul.lista-links li {
+        margin: 0 0 0 4px;
+        width: 100%;
+        padding: 10px 0 10px 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    ul.lista-links li img {
+        height: 24px;
+        width: 35%!important;
+        margin-right: 5px;
+    }
+    .secondSectionParagraph {
+        color: #ffffff;
+        text-align: center;
+        padding: 10px!important;
+    }
+
+    .secao2-content {
+        background-color: #6cff7759;
+        width: 90;
+        margin: 0 auto;
+        /* height: 109%; */
+    }
+    .secondParallax {
+        background-image: url('./icons/backgroudImage-3.png');
+        opacity: 0.9;
+        height: 100%!important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 8rem;
+        background-size: cover;
+        /* width: 100vw; */
+    }
+
+    #navigation:hover #linkUm {
+        display: inline;
+    }
+
+    #titulo {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #linkUm {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .thirdParallax {
+        background-image: url(./icons/parallax-3.jpg);
+        opacity: 0.9;
+        height: auto;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 8rem;
+        background-size: cover;
+    }
+}
