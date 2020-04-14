@@ -59,6 +59,7 @@ ul.lista-links li img {
     margin-right: 5px;
 }
 
+/* Celular de ate 720 de largura*/
 @media only screen and (max-width: 720px) {
     main {
         margin-left: 8rem;
@@ -72,7 +73,8 @@ ul.lista-links li img {
         flex-direction: column;
     }
     #navigation:hover{
-        width: 12rem;
+        width: 100vw;
+        height: 100vh;
     }
     #navigation:hover .link-text{
         display: inline!important;
