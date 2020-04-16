@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "noEmit": false,
+        "moduleResolution": "node",
+        "target": "ES2019",
+        "importHelpers": true,
+        "outDir": "lib",
+        "baseUrl": "src",     
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "lib": ["DOM","ES2020", "ESNext", "ES2020.String"]
+    },
+    "include": ["src/typescript"],
+    "exclude": [
+        "node_modules",
+        "tests",
+        "examples",
+        "lib",
+        "**/__tests__/*"
+      ],
+      
+}

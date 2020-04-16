@@ -1,11 +1,11 @@
 (function(){
         const cards = document.querySelector('.img-area');
         const userProfiles = [
-            {nome: 'Bruno Almeida Kotesky',photo: 'icons/IMG_1543.jpg'},
-            {nome: 'Davi Cavalcante',photo: 'icons/IMG_9353.jpg'},
-            { nome: 'Renzo Hideki',photo: 'icons/RenzoPicture.jpg'},
-            {nome: 'Lucas', photo: 'icons/LucasPicture.jpg'},
-            { nome: 'Gustavo',photo: 'icons/IMG_1543.jpg'}
+            {nome: 'Bruno Almeida Kotesky',photo: '../icons/IMG_1543.jpg'},
+            {nome: 'Davi Cavalcante',photo: '../icons/IMG_9353.jpg'},
+            { nome: 'Renzo Hideki',photo: '../icons/RenzoPicture.jpg'},
+            {nome: 'Lucas', photo: '../icons/LucasPicture.jpg'},
+            { nome: 'Gustavo',photo: '../icons/IMG_1543.jpg'}
         ];
         
         userProfiles.forEach(card => {

@@ -125,7 +125,7 @@ ul.lista-links li img {
         /* height: 109%; */
     }
     .secondParallax {
-        background-image: url('./icons/backgroudImage-3.png');
+        background-image: url('../icons/backgroudImage-3.png');
         opacity: 0.9;
         height: 100%!important;
         background-attachment: fixed;
@@ -152,7 +152,7 @@ ul.lista-links li img {
     }
 
     .thirdParallax {
-        background-image: url(./icons/parallax-3.jpg);
+        background-image: url('../icons/parallax-3.jpg');
         opacity: 0.9;
         height: auto;
         background-attachment: fixed;

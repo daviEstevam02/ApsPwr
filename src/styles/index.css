@@ -24,7 +24,7 @@ body, html, main {
   scroll-behavior: smooth;
 }
   .thirdParallax{
-    background-image: url("./icons/parallax-3.jpg");
+    background-image: url("../icons/parallax-3.jpg");
     opacity: 0.9;
     /* Set a specific height */
     height:auto;
@@ -38,7 +38,7 @@ body, html, main {
   }
 
   .secondParallax{
-    background-image: url("./icons/backgroudImage-3.png");
+    background-image: url("../icons/backgroudImage-3.png");
     opacity: 0.9;
     /* Set a specific height */
     height:calc(100% - 60px) ;
@@ -50,7 +50,7 @@ body, html, main {
   }
   .secondParallax::before{
     content: '';
-    background-image: url("./icons/backgroudImage-3.png");
+    background-image: url("../icons/backgroudImage-3.png");
     top: 0;
     left: 0;
     position: absolute;
