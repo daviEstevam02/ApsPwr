@@ -62,24 +62,17 @@ ul.lista-links li img {
 /* Celular de ate 720 de largura*/
 @media only screen and (max-width: 720px) {
     main {
-        margin-left: 8rem;
+        margin-left: 5rem;
         padding: 1rem;
     }
 
     #navigation {
         top: 0;
-        width: 8rem;
+        width: 5rem;
         height: 100%;
         flex-direction: column;
     }
-    #navigation:hover{
-        width: 100vw;
-        height: 100vh;
-    }
-    #navigation:hover .link-text{
-        display: inline!important;
 
-    }
     .link-text {
         display: none;
         margin-left: 1rem;
@@ -131,7 +124,7 @@ ul.lista-links li img {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        margin-left: 8rem;
+        margin-left: 5rem;
         background-size: cover;
         /* width: 100vw; */
     }
@@ -158,7 +151,7 @@ ul.lista-links li img {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        margin-left: 8rem;
+        margin-left: 5rem;
         background-size: cover;
     }
 }

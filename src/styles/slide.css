@@ -8,9 +8,8 @@
 
   .slideshow-container img{
     width: 100%;
-    width: 100%;
     border-radius: 10px 10px 10px 10px;
-    height: 600px;
+    height: 50%;
     outline: paleturquoise;
     border-color: black;
   }
