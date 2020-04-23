@@ -21,7 +21,7 @@
   clear: both;
 }
 .card {
-    max-width: 220px;
+    max-width: 200px;
     flex-grow: 1;
     height: 100%;
     text-align: center;

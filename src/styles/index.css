@@ -1,123 +1,153 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-body, html, main {
-    height: 100%;
-  }
-  body{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 16px;
-  }
-  body::-webkit-scrollbar{
-    width: 0.5rem;
-  }
-  body::-webkit-scrollbar-track{
-    background: #ffffffef;
-  }
-  body::-webkit-scrollbar-thumb{
-    background: #3e9244f8;
-    border-radius: 8px;
-    outline: 1px solid; 
-  }
-  html {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html,
+main {
+  height: 100vh;
+  background: aquamarine;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffffef;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #3e9244f8;
+  border-radius: 8px;
+  outline: 1px solid;
+}
+
+html {
   scroll-behavior: smooth;
 }
-  .thirdParallax{
-    background-image: url("../icons/parallax-3.jpg");
-    opacity: 0.9;
-    /* Set a specific height */
-    height:auto;
-    
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
-  .secondParallax{
-    background-image: url("../icons/backgroudImage-3.png");
-    opacity: 0.9;
-    /* Set a specific height */
-    height:calc(100% - 60px) ;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .secondParallax::before{
-    content: '';
-    background-image: url("../icons/backgroudImage-3.png");
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
+.thirdParallax {
+  background-image: url("../icons/parallax-3.jpg");
+  opacity: 0.9;
+  /* Set a specific height */
+  height: 100vh;
 
-  .container {
-    height: 100%;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
-   
-  }
-  
-  
-    #titulo{
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .logo{
-        margin: 10px 0px 0px  0px;
-    }
-    #secao-2{
-        height: 100%;
-        width: 100%;
-    }
-    .secao2-content{
-      background-color: #6cff7759;
-      width: 88.8%;
-      margin: 0 auto;
-      height: 50%;
-    }
-    .titleSecondSection{
-        color: #ffffff;
-        font-size: 25px;
-        text-align: center;
-        padding: 55px 0px 40px;
-    }
-    .secondSectionParagraph{
-        color: #ffffff;
-        text-align: center;
-        padding: 100px 30px ;
-    }
-
-    /* Slideshow container */
-.slideshow-container {
-  position: relative;
-  display:flex;
-  flex-wrap: wrap;
-  margin: 80px;
-  align-items: center;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#secao-1{
+
+.secondParallax {
+  background-image: url("../icons/backgroudImage-3.png");
+  opacity: 0.9;
+  /* Set a specific height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.secondParallax::before {
+  content: '';
+  background-image: url("../icons/backgroudImage-3.png");
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.container {
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+#titulo {
+  text-align: center;
+  text-decoration: none;
+  /*! height: ; */
+}
+
+.logo {
+  height: 100%;
+}
+
+#secao-2 {
+  height: 100%;
   width: 100%;
 }
 
-.slideshow-container img{
+.secao2-content {
+  background-color: #6cff7759;
+  width: 88.8%;
+  margin: 0 auto;
+  height: 50%;
+}
+
+.titleSecondSection {
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  padding: 55px 0px 40px;
+}
+
+.secondSectionParagraph {
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /*! position: relative; */
+  /*! display:flex; */
+  /*! flex-wrap: wrap; */
+  /*! margin: 0 auto; */
+  /*! align-content: center; */
+  width: 50%;
+  /*! margin: 0 auto; */
+  /*! justify-content: center; */
+}
+
+#secao-1 {
+  width: 100%;
+  display: grid;
+  /*! grid-template-rows: ; */
+  justify-items: center;
+  align-items: center;
+  /*! grid-template-rows: 1.0fr 0fr; */
+  /*! grid-gap: -29px; */
+}
+
+#section-3{
+  height: 100%;
+}
+
+.slideshow-container img {
   width: 100%;
   border-radius: 10px;
-  height: 600px;
+  height: 250px;
   outline: paleturquoise;
   border-color: black;
 
@@ -170,65 +200,66 @@ body, html, main {
 
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+
+
+
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
 }
 
-      
-      .title {
-        color: rgb(0, 0, 0);
-        font-size: 18px;
-      }
-    
-      
-      button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        font-size: 18px;
-      }
-      
-     .profileCard {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-      }
-      
-      button:hover, a:hover {
-        opacity: 0.9;
-      }
-   
 
-    @media only screen and (max-device-width: 1366px) {
-        .parallax {
-          background-attachment: scroll;
-        }
-      }
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
 
-      .container {
-        height: 100%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-       
-      }
+.profileCard {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.9;
+}
+
+.container {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

@@ -1,20 +1,22 @@
 {
     "compilerOptions": {
         "experimentalDecorators": true,
-        "resolveJsonModule": true,
         "emitDecoratorMetadata": true,
         "esModuleInterop": true,
         "allowJs": true,
         "noEmit": false,
-        "moduleResolution": "node",
-        "target": "ES2019",
+        "target": "es2019",
         "importHelpers": true,
         "outDir": "lib",
-        "baseUrl": "src",     
+        "baseUrl": "src",
+        "allowSyntheticDefaultImports":true,
         "sourceMap": true,
         "noImplicitAny": false,
+        "module": "es2015",
+        "skipLibCheck": true,
         "lib": ["DOM","ES2020", "ESNext", "ES2020.String"]
     },
+    "compileOnSave": true,
     "include": ["src/typescript"],
     "exclude": [
         "node_modules",
