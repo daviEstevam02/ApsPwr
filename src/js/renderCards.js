@@ -1,7 +1,7 @@
-import {$} from '../typescript/utils.js';
+import {$,debouncer} from '../typescript/utils.js';
 (function(){
 
-    const cardImgArea = $('.img-area', false);
+    const cardImgArea = $('.img-area');
         const userProfiles = [
             {nome: 'Bruno Almeida Kotesky',photo: '../icons/IMG_1543.jpg'},
             { nome: 'Renzo Hideki',photo: '../icons/RenzoPicture.jpg'},

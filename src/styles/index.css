@@ -86,7 +86,7 @@ html {
 #titulo {
   text-align: center;
   text-decoration: none;
-  /*! height: ; */
+  margin-left: 30px;
 }
 
 .logo {

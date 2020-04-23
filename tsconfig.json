@@ -12,7 +12,7 @@
         "allowSyntheticDefaultImports":true,
         "sourceMap": true,
         "noImplicitAny": false,
-        "module": "es2015",
+        "module": "esnext",
         "skipLibCheck": true,
         "lib": ["DOM","ES2020", "ESNext", "ES2020.String"]
     },

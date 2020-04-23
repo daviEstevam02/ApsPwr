@@ -18,7 +18,12 @@
         margin-left: 5rem;
         padding: 1rem;
     }
-
+    
+    #titulo {
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+    }
     #navigation {
         top: 0;
         width: 5rem;
@@ -93,11 +98,6 @@
         display: inline;
     }
 
-    #titulo {
-        text-align: center;
-        text-decoration: none;
-    }
-
     #linkUm {
         display: flex;
         width: 100%;
@@ -121,6 +121,12 @@
     .text {
         font-size: 11px
     }
+#titulo {
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+
+}
     .secao2-content{
         font-size: 14px;
     }
